@@ -1,0 +1,139 @@
+.header {
+    background-color: var(--gray-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5rem;
+}
+
+.main_area {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 46rem;
+}
+
+.form_create_task {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    height: 3.375rem;
+
+    margin-top: -3.375rem;
+    transform: translateY(50%);
+}
+
+.show_tasks {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5.6875rem;
+}
+
+.show_tasks > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    color: var(--blue);
+}
+
+/* .created_tasks, .completed_tasks {
+    margin-left: 0.5rem;
+    background-color: var(--gray-400);
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+    color: var(--gray-200);
+} */
+
+.label_created_completed {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.0625rem;
+}
+
+.created_tasks, .completed_tasks {
+    background-color: var(--gray-400);
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+    color: var(--gray-200);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 0.9375;
+}
+
+.tasks_list {
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    margin-top: 1.5rem;
+}
+
+.tasksListWithTasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 4rem; */
+    margin-top: 1.5rem;
+}
+
+.tasks_list > ul, .tasksListWithTasks > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    
+    width: 100%;
+}
+
+.tasks_list > ul li, .tasksListWithTasks > ul li {
+    width: 100%;
+}
+
+.no_tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no_tasks p {
+    color: var(--gray-300);
+    text-align: center;
+}
+
+.no_tasks p:nth-of-type(1) {
+    font-weight: 700;
+}
+
+/* .no_tasks > svg {
+    margin-bottom: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: var(--gray-400);
+} */
+
+.no_tasks > img {
+    margin-bottom: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: var(--gray-400);
+}

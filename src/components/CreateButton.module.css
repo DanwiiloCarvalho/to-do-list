@@ -1,0 +1,27 @@
+.submit {
+    width: 5.625rem;
+    background-color: var(--blue-dark);
+    border-radius: 8px;
+    border: 0;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-style: normal;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.501875rem;
+    order: 1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: var(--blue);
+}
+
+.submit svg {
+    height: 0.998125rem;
+    width: 0.998125rem;
+}

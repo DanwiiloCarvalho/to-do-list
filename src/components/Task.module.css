@@ -1,0 +1,62 @@
+.task {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.75rem;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+    box-shadow: 0rem 0.125rem 0.5rem rgba(0, 0, 0, 0.06);
+}
+
+.task > p {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--gray-100);
+    flex: 1;
+
+    line-break: anywhere;
+}
+
+p.taskCompleted {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.task > input[type="checkbox"] {
+    border-radius: 100%;
+    align-self: flex-start;
+    /* padding: 0.204375rem; */
+    background-color: transparent;
+    border: 2px solid var(--blue);
+}
+
+.task > input[type="checkbox"]:checked {
+    background-color: var(--purple-dark);
+    border: 0;
+}
+
+.trash {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* align-self: flex-start; */
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    display: inline-block;
+}
+
+.trash > svg path {
+    transition: fill 0.4s;
+}
+
+.trash:hover > svg path {
+    fill: var(--danger);
+}
+
